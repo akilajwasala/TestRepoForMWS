@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		134005D31EB84E6200C154DF /* mobile_tools in Resources */ = {isa = PBXBuildFile; fileRef = 134005D21EB84E6200C154DF /* mobile_tools */; };
+		134005DD1EB857AC00C154DF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 134005DB1EB857AC00C154DF /* TestViewController.m */; };
+		134005DE1EB857AC00C154DF /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 134005DC1EB857AC00C154DF /* TestViewController.xib */; };
 		E483AC2A1EB84BB100B17571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E483AC291EB84BB100B17571 /* main.m */; };
 		E483AC2D1EB84BB100B17571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E483AC2C1EB84BB100B17571 /* AppDelegate.m */; };
 		E483AC301EB84BB100B17571 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E483AC2F1EB84BB100B17571 /* ViewController.m */; };
@@ -38,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		134005D21EB84E6200C154DF /* mobile_tools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mobile_tools; sourceTree = "<group>"; };
+		134005DA1EB857AC00C154DF /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		134005DB1EB857AC00C154DF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		134005DC1EB857AC00C154DF /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		E483AC251EB84BB000B17571 /* TestProjectForMWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProjectForMWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E483AC291EB84BB100B17571 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E483AC2B1EB84BB100B17571 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +87,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		134005D91EB8578B00C154DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				134005DA1EB857AC00C154DF /* TestViewController.h */,
+				134005DB1EB857AC00C154DF /* TestViewController.m */,
+				134005DC1EB857AC00C154DF /* TestViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		E483AC1C1EB84BB000B17571 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +121,7 @@
 		E483AC271EB84BB000B17571 /* TestProjectForMWS */ = {
 			isa = PBXGroup;
 			children = (
+				134005D91EB8578B00C154DF /* Controllers */,
 				E483AC2B1EB84BB100B17571 /* AppDelegate.h */,
 				E483AC2C1EB84BB100B17571 /* AppDelegate.m */,
 				E483AC2E1EB84BB100B17571 /* ViewController.h */,
@@ -253,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				134005D31EB84E6200C154DF /* mobile_tools in Resources */,
+				134005DE1EB857AC00C154DF /* TestViewController.xib in Resources */,
 				E483AC3B1EB84BB200B17571 /* LaunchScreen.storyboard in Resources */,
 				E483AC381EB84BB200B17571 /* Assets.xcassets in Resources */,
 				E483AC331EB84BB100B17571 /* Main.storyboard in Resources */,
@@ -284,6 +301,7 @@
 				E483AC2D1EB84BB100B17571 /* AppDelegate.m in Sources */,
 				E483AC2A1EB84BB100B17571 /* main.m in Sources */,
 				E483AC361EB84BB100B17571 /* TestProjectForMWS.xcdatamodeld in Sources */,
+				134005DD1EB857AC00C154DF /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
