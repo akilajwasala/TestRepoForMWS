@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function usage {
+    echo "Usage: $0 number label"
+}
+
+if [ $# -lt 2 ]
+then
+    echo "Please enter a story number (with prefix) and label"
+    usage
+    exit 1
+fi
+
+start-issue "story" $1 $2

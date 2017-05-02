@@ -1,0 +1,35 @@
+#!/bin/bash
+
+function usage {
+    echo "Usage: $0 type number label"
+}
+
+if [ $# -ne 3 ]
+then
+    echo "Please enter an issue type, number (with prefix) and label"
+    usage
+    exit 1
+fi
+
+issue_number=$2
+
+# check if branch already exists
+branch=`get-branch-for-issue $issue_number`
+
+if [ "$branch" != "" ]
+then
+    echo 
+    echo "Oops! a branch with the issue number \"$issue_number\" already exists."
+    echo "Execute \"swap-branch $issue_number\" instead."
+    exit 1
+fi
+
+git checkout master
+
+git pull origin master
+
+branch="$1-$2-$3"
+
+git checkout -b $branch
+
+git push origin $branch

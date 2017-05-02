@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function usage {
+    echo "Usage: $0 number label"
+}
+
+if [ $# -ne 2 ]
+then
+    echo "Please enter a bug number (with prefix) and label"
+    usage
+    exit 1
+fi
+
+start-issue "bug" $1 $2

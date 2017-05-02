@@ -1,0 +1,41 @@
+#!/bin/sh
+
+# Checks out the branch for the given issue number and merges master
+#
+# Usage: swap-branch issue
+
+if [ $# -ne 1 ]
+then
+    echo "Usage: `basename $0` issue"
+    exit 1
+fi
+
+branch=`get-branch-for-issue $1`
+
+set -e
+
+echo "Updating local master..."
+git fetch
+git checkout master
+git pull origin master
+echo "master updated"
+
+echo
+echo "Merging local master into local $branch..."
+git checkout $branch
+git pull origin $branch
+git merge master
+echo "Local master merged into local $branch"
+
+echo
+echo "Pushing $branch to remote ..."
+git push origin $branch
+echo "Local $branch pushed to remote"
+
+# echo
+# echo "Installing composer packages..."
+# php composer.phar install
+# echo "Composer packages installed"
+
+echo
+echo "Done"
