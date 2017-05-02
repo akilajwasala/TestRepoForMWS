@@ -17,6 +17,7 @@
 		E483AC3B1EB84BB200B17571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E483AC391EB84BB200B17571 /* LaunchScreen.storyboard */; };
 		E483AC461EB84BB200B17571 /* TestProjectForMWSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E483AC451EB84BB200B17571 /* TestProjectForMWSTests.m */; };
 		E483AC511EB84BB200B17571 /* TestProjectForMWSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E483AC501EB84BB200B17571 /* TestProjectForMWSUITests.m */; };
+		E4C888FE1EB8556E0025C3D5 /* SampleFilesByAJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C888FD1EB8556E0025C3D5 /* SampleFilesByAJViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		E483AC4C1EB84BB200B17571 /* TestProjectForMWSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestProjectForMWSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E483AC501EB84BB200B17571 /* TestProjectForMWSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestProjectForMWSUITests.m; sourceTree = "<group>"; };
 		E483AC521EB84BB200B17571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4C888FC1EB8556E0025C3D5 /* SampleFilesByAJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleFilesByAJViewController.h; sourceTree = "<group>"; };
+		E4C888FD1EB8556E0025C3D5 /* SampleFilesByAJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleFilesByAJViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				E483AC2C1EB84BB100B17571 /* AppDelegate.m */,
 				E483AC2E1EB84BB100B17571 /* ViewController.h */,
 				E483AC2F1EB84BB100B17571 /* ViewController.m */,
+				E4C888FC1EB8556E0025C3D5 /* SampleFilesByAJViewController.h */,
+				E4C888FD1EB8556E0025C3D5 /* SampleFilesByAJViewController.m */,
 				E483AC311EB84BB100B17571 /* Main.storyboard */,
 				E483AC371EB84BB200B17571 /* Assets.xcassets */,
 				E483AC391EB84BB200B17571 /* LaunchScreen.storyboard */,
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C888FE1EB8556E0025C3D5 /* SampleFilesByAJViewController.m in Sources */,
 				E483AC301EB84BB100B17571 /* ViewController.m in Sources */,
 				E483AC2D1EB84BB100B17571 /* AppDelegate.m in Sources */,
 				E483AC2A1EB84BB100B17571 /* main.m in Sources */,
